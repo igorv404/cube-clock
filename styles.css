@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka', sans-serif;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+figure {
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  top: calc(50% - 105px);
+  left: calc(50% - 105px);
+  transform: rotateX(-35deg) rotateY(45deg);
+  transform-style: preserve-3d;
+  transition: 1.2s;
+  cursor: pointer;
+}
+
+figure:hover {
+  transform: rotateX(-90deg) rotateY(0deg);
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  background-color: salmon;
+  position: absolute;
+  font-size: 180px;
+  color: white;
+  text-align: center;
+  transform-origin: center;
+}
+
+.top {
+  background-color: lightsalmon;
+  transform: rotateX(90deg) translate3d(0, 0, 105px);
+}
+
+.left {
+  transform: rotateY(-90deg) translate3d(0, 0, 105px);
+}
+
+.right {
+  background-color: darksalmon;
+  transform: translate3d(0, 0, 105px);
+}
